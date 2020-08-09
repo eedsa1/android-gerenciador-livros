@@ -25,8 +25,14 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<Livro> listaLivros = new ArrayList<>();
-        Livro l1 = new Livro(1L, "Android para leigos", "Michel Burton", "Alta Books", false);
-        listaLivros.add(l1);
+
+        listaLivros.add(new Livro(1L, "Android para Leigos", "Michel Burton", "Alta Books", false));
+        listaLivros.add(new Livro(2L, "Android para Programadores", "Paul J, Deitel", "Bookman", true));
+        listaLivros.add(new Livro(3L, "Desenvolvimento para Android", "Griffiths, David", "Alta Books", false));
+        listaLivros.add(new Livro(4L, "Android Base de Dados", "Queirós, Ricardo", "FCA Editora", true));
+        listaLivros.add(new Livro(5L, "Android em Ação", "King, Chris", "Elsevier - Campus", false));
+        listaLivros.add(new Livro(5L, "Jogos em Android", "Queirós, Ricardo", "FCA - Editora", true));
+        listaLivros.add(new Livro(5L, "Android Essencial com Kotlin", "Ricardo R.", "NOVATEC", false));
 
         LivroAdapter livroAdapter = new LivroAdapter(listaLivros, this);
 
