@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         List<Livro> listaLivros = new ArrayList<>();
 
-        listaLivros.add(new Livro(1L, "Android para Leigos", "Michel Burton", "Alta Books", false));
-        listaLivros.add(new Livro(2L, "Android para Programadores", "Paul J, Deitel", "Bookman", true));
-        listaLivros.add(new Livro(3L, "Desenvolvimento para Android", "Griffiths, David", "Alta Books", false));
-        listaLivros.add(new Livro(4L, "Android Base de Dados", "Queirós, Ricardo", "FCA Editora", true));
-        listaLivros.add(new Livro(5L, "Android em Ação", "King, Chris", "Elsevier - Campus", false));
-        listaLivros.add(new Livro(5L, "Jogos em Android", "Queirós, Ricardo", "FCA - Editora", true));
-        listaLivros.add(new Livro(5L, "Android Essencial com Kotlin", "Ricardo R.", "NOVATEC", false));
+        listaLivros.add(new Livro(1L, "Android para Leigos", "Michel Burton", "Alta Books", 0));
+        listaLivros.add(new Livro(2L, "Android para Programadores", "Paul J, Deitel", "Bookman", 1));
+        listaLivros.add(new Livro(3L, "Desenvolvimento para Android", "Griffiths, David", "Alta Books", 0));
+        listaLivros.add(new Livro(4L, "Android Base de Dados", "Queirós, Ricardo", "FCA Editora", 1));
+        listaLivros.add(new Livro(5L, "Android em Ação", "King, Chris", "Elsevier - Campus", 0));
+        listaLivros.add(new Livro(5L, "Jogos em Android", "Queirós, Ricardo", "FCA - Editora", 1));
+        listaLivros.add(new Livro(5L, "Android Essencial com Kotlin", "Ricardo R.", "NOVATEC", 0));
 
         LivroAdapter livroAdapter = new LivroAdapter(listaLivros, this);
 
