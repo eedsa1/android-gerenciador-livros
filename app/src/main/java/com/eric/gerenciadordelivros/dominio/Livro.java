@@ -1,6 +1,8 @@
 package com.eric.gerenciadordelivros.dominio;
 
-public class Livro {
+import java.io.Serializable;
+
+public class Livro implements Serializable {
     private Long id;
     private String titulo;
     private String autor;
@@ -9,6 +11,13 @@ public class Livro {
 
     public Livro(Long id, String titulo, String autor, String editora, int emprestado) {
         this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editora = editora;
+        this.emprestado = emprestado;
+    }
+
+    public Livro(String titulo, String autor, String editora, int emprestado) {
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
